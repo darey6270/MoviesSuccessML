@@ -1,0 +1,384 @@
+{% extends 'base.html' %}
+{% load widget_tweaks %}
+{% load static %}
+<!-- banner Start -->
+
+
+{%block our_offer %}
+<style>
+
+.bg-offer {
+    background:url({% static 'other/img/unnamed.jpg' %}) center center no-repeat;
+    background-size: cover;
+}
+</style>
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-offer bg-dark bg-img p-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-uppercase text-white">Movies Success Prediction</h1>
+                <a href="">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="">Make movies prediction</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+  <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">About the Prediction</h2>
+                <h6 class="display-4 text-uppercase">Welcome To Our Movies Success Prediction</h6>
+            </div>
+        </div>
+    </div>
+
+ <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h2 class="text-primary font-secondary">fill out the form for prediction</h2>
+            </div>
+        </div>
+    <!-- Contact Start -->
+    <div class="container-fluid" style="margin-top: 90px; background-color:purple">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <form method="post">
+                        {%csrf_token%}
+
+                        <div class="row justify-content-center">
+                 <div class="col-3">
+
+                 </div>
+                            <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie Title</label>
+    <div class="col">
+      <select >
+                         <option>Chris Pratt, Vin Diesel, Bradley Cooper, Zoe Saldana</option>
+                         <option>Noomi Rapace, Logan Marshall-Green, Michael Fassbender, Charlize Theron</option>
+                         <option>James McAvoy, Anya Taylor-Joy, Haley Lu Richardson, Jessica Sula</option>
+                         <option>Matthew McConaughey,Reese Witherspoon, Seth MacFarlane, Scarlett Johansson
+                         </option>
+                         <option>Will Smith, Jared Leto, Margot Robbie, Viola Davis</option>
+                         <option>Matt Damon, Tian Jing, Willem Dafoe, Andy Lau</option>
+                         <option>Ryan Gosling, Emma Stone, Rosemarie DeWitt, J.K. Simmons</option>
+                         <option>Charlie Hunnam, Robert Pattinson, Sienna Miller, Tom Holland</option>
+                         <option>Jennifer Lawrence, Chris Pratt, Michael Sheen,Laurence Fishburne</option>
+                         <option>Fantastic Beasts and Where to Find Them</option>
+                         <option>Eddie Redmayne, Katherine Waterston, Alison Sudol,Dan Fogler</option>
+                         <option>Taraji P. Henson, Octavia Spencer, Janelle MonÃ¡e,Kevin Costner</option>
+                         <option>Felicity Jones, Diego Luna, Alan Tudyk, Donnie Yen</option>
+                         <option>Auli'i Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison</option>
+                         <option>Anne Hathaway, Jason Sudeikis, Austin Stowell,Tim Blake Nelson</option>
+                         <option>Louis C.K., Eric Stonestreet, Kevin Hart, Lake Bell</option>
+                         <option>Andrew Garfield, Sam Worthington, Luke Bracey,Teresa Palmer</option>
+                     </select>
+    </div>
+  </div>
+                 </div>
+
+
+
+                 <div class="col-3">
+
+                 </div>
+             </div>
+
+
+    <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie Actions</label>
+    <div class="col">
+      <select >
+                         <option>Guardians of the Galaxy</option>
+                         <option>Prometheus</option>
+                         <option>Split</option>
+                         <option>Sing
+                         </option>
+                         <option>Suicide Squad</option>
+                         <option>The Great Wall</option>
+                         <option>La La Land</option>
+                         <option>The Lost City of Z</option>
+                         <option>Passengers</option>
+                         <option>Fantastic Beasts and Where to Find Them</option>
+                         <option>Hidden Figures</option>
+                         <option>Rogue One</option>
+                         <option>Moana</option>
+                         <option>Colossal</option>
+                         <option>The Secret Life of Pets</option>
+                         <option>Hacksaw Ridge</option>
+                         <option>Jason Bourne</option>
+                     </select>
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie Director</label>
+                         <div class="col">
+                     <select >
+                         <option>James Gunn</option>
+                         <option>Ridley Scott</option>
+                         <option>M. Night Shyamalan</option>
+                         <option>Christophe Lourdelet</option>
+                         <option>David Ayer</option>
+                         <option>Yimou Zhang</option>
+                         <option>Damien Chazelle</option>
+                         <option>James Gray</option>
+                         <option>Morten Tyldum</option>
+                         <option>David Yates</option>
+                         <option>Theodore Melfi</option>
+                         <option>Gareth Edwards</option>
+                         <option>Ron Clements</option>
+                         <option>Nacho Vigalondo</option>
+                         <option>Chris Renaud</option>
+                         <option>Mel Gibson</option>
+                         <option>Paul Greengrass</option>
+                     </select>
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+
+
+
+
+             <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie Runtime</label>
+    <div class="col">
+      {% render_field predictForm.runtime|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="runtime" %}
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie Rating</label>
+                         <div class="col">
+                     {% render_field predictForm.rating|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="rating" %}
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+                        <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie votes</label>
+    <div class="col">
+      {% render_field predictForm.votes|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="votes" %}
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Action Movie</label>
+                         <div class="col">
+                     {% render_field predictForm.action|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="action" %}
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+                        <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie revenue</label>
+    <div class="col">
+      {% render_field predictForm.revenue|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="revenue" %}
+                 </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie metascore</label>
+                         <div class="col">
+                     {% render_field predictForm.metascore|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="metascore" %}
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+<div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Animation Movie </label>
+    <div class="col">
+      {% render_field predictForm.animation|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder=" is it animation movie" %}
+                 </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie adventure</label>
+                         <div class="col">
+                     {% render_field predictForm.adventure|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="adventure" %}
+
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+                   <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Comedy Movie </label>
+    <div class="col">
+      {% render_field predictForm.comedy|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="comedy" %}
+                 </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Movie biography</label>
+                         <div class="col">
+                     {% render_field predictForm.biography|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="biography" %}
+
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+  <div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Crime Movie </label>
+    <div class="col">
+      {% render_field predictForm.crime|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="crime" %}           </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Drama Movie </label>
+                         <div class="col">
+                     {% render_field predictForm.drama|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="drama" %}
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+
+<div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Fantasy Movie </label>
+    <div class="col">
+      {% render_field predictForm.fantasy|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="fantasy" %}
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Family Movie </label>
+                         <div class="col">
+                     {% render_field predictForm.family|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="family" %}
+
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+
+
+
+<div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Horror Movie </label>
+    <div class="col">
+      {% render_field predictForm.horror|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="is it horror movie" %}
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Historical Movie </label>
+                         <div class="col">
+                     {% render_field predictForm.history|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="history" %}
+
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+
+<div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Mystery Movie </label>
+    <div class="col">
+      {% render_field predictForm.mystery|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="is it mystery movie" %}
+
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Scifi Movie </label>
+                         <div class="col">
+                     {% render_field predictForm.scifi|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="is it scifi movie" %}
+                         </div>
+                         </div>
+                 </div>
+             </div>
+
+
+
+<div class="row justify-content-center">
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Year of the Movie </label>
+    <div class="col">
+      {% render_field predictForm.year|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="year" %}
+
+    </div>
+  </div>
+                 </div>
+
+                 <div class="col-4">
+                     <div class="form-group row">
+    <label for="inputEmail3" class="col col-form-label bg-light">Thriller Movie </label>
+                         <div class="col">
+                     {% render_field predictForm.thriller|attr:'required:false'   class="form-control bg-light border-0 px-4" placeholder="is it thriller movie" %}    </div>
+                         </div>
+                 </div>
+             </div>
+
+
+
+                        <div class="row justify-content-center">
+                 <div class="col-3">
+
+                 </div>
+
+                 <div class="col-3">
+                     <button class="btn btn-primary border-inner w-100 py-3" type="submit">Proceed</button>
+                 </div>
+
+                 <div class="col-3">
+
+                 </div>
+             </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<br /><br />
+    <!-- Contact End -->
+{%endblock%}

@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- banner Start -->
+
+
+
+{%block our_offer %}
+<style>
+
+.bg-offer {
+    background:url({% static 'other/img/unnamed.jpg' %}) center center no-repeat;
+    background-size: cover;
+}
+</style>
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-offer bg-dark bg-img p-5 mb-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5 class="display-6 text-uppercase text-white">Movies Prediction Result</h5>
+                <a href="">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="">Result of the Movies Prediction</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Start -->
+    <div class="container-fluid pt-5">
+        <div class="container">
+            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h5 class="text-primary font-secondary">About the Prediction</h5>
+                <h6 class="display-6 text-uppercase">Welcome To Our Movies Success Prediction</h6>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class=" position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+                <h6 class="text-primary font-secondary">Your movie result prediction is below</h6>
+                <h6 class="text-uppercase">{{prediction_text}}</h6>
+                <a href="{% url 'service' %}"  class="btn btn-primary">< Back to Movies Prediction</a>
+            </div>
+        </div>
+    </div>
+<br /><br />
+    <!-- Contact End -->
+{%endblock%}
